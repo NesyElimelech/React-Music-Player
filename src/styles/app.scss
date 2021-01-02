@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,700;1,400&display=swap');
+
+@import './player';
+@import './song';
+@import './library';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.App {
+  margin: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #313131;
+}
