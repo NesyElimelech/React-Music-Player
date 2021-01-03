@@ -3,9 +3,14 @@
   top: 0;
   left: 0;
   width: 20rem;
+  background: #fff;
   height: 100%;
   box-shadow: 2px 2px 50px rgb(184, 184, 184);
   overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 3;
   h2 {
     font-size: 2.3rem;
     padding: 2rem;
@@ -17,7 +22,7 @@
 .library-song {
   display: flex;
   align-items: center;
-
+  transition: background-color 0.3s ease;
   padding: 1rem 2rem;
   cursor: pointer;
 
@@ -53,4 +58,19 @@
   background: #4545459a;
   border-radius: 20rem;
   border: transparent;
+}
+
+.selected {
+  background-color: #99d1d7;
+}
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }
